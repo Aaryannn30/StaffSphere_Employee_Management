@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './App.css'
 
 export default class PersonList extends React.Component {
   state = {
@@ -17,7 +18,7 @@ export default class PersonList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='App'>
         <header>
           Django Generated Data :
         </header>
