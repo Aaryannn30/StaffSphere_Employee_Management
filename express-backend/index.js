@@ -7,6 +7,8 @@ connectTOMongo();
 const app = express()
 const port = 3000
 
+app.use('/api/auth', require('./routes/auth'))
+
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
