@@ -3,6 +3,7 @@
 import './App.css';
 import Pricing from './components/Pricing';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 const App = () => {
   // const [details, setDetails] = useState([]);
@@ -45,8 +46,7 @@ const App = () => {
       <Navbar />
       <Pricing />
       <Pricing />
-      <Pricing />
-      <Pricing />
+      <Footer/>
     </>
   );
 
