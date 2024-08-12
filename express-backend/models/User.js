@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+const { Schema } = mongoose;
 
 const UserSchema = new Schema({
     firstname: {
@@ -34,16 +34,16 @@ const UserSchema = new Schema({
         type: String
     },
     birthdate: {
-        type: Date
+        type: String
     },
     address: {
         type: String
     },
     pfp: {
-        type: Image
+        type: String
     },
     date: {
-        type: Date,
+        type: String,
         default: Date.now
     }
 });

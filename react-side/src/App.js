@@ -1,44 +1,55 @@
-import React from 'react';
-import axios from 'axios';
-import './App.css'
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+import './App.css';
+import Pricing from './components/Pricing';
+import Navbar from './components/Navbar';
 
-export default class PersonList extends React.Component {
-  state = {
-    details: []
-  }
+const App = () => {
+  // const [details, setDetails] = useState([]);
 
-  componentDidMount() {
-    let data;
-    axios.get(`http://127.0.0.1:8000/`)
-      .then(res => {
-        data = res.data;
-        this.setState({ details: data });
-      })
-  }
+  // useEffect(() => {
+  //   let data;
+  //   axios.get(`http://127.0.0.1:8000/`)
+  //     .then(res => {
+  //       data = res.data;
+  //       setDetails(data);
+  //     })
+  //     .catch(err=>{
+  //       console.log(err)
+  //     })
+  // }, []); // Empty dependency array to run only on mount
 
-  render() {
-    return (
-      <div className='App'>
-        <header>
-          Django Generated Data :
-        </header>
-        <hr></hr>
-        {this.state.details.map((output, id) => (
-          <div key={id}>
-            <div>
-              <h2>
-                {output.employee}
-              </h2>
-              <h3>
-                {output.department}
-              </h3>
-            </div>
-          </div>
-        )
-        )}
-      </div>
-    )
-  }
+  // return (
+  //   <div className='App'>
+  //     <header>
+  //       Django Generated Data:
+  //     </header>
+  //     <hr />
+  //     {details.map((output, id) => (
+  //       <div key={id}>
+  //         <div>
+  //           <h2>
+  //             {output.employee}
+  //           </h2>
+  //           <h3>
+  //             {output.department}
+  //           </h3>
+  //         </div>
+  //       </div>
+  //     ))}
+  //   </div>
+  // );
+
+  return (
+    <>
+      <Navbar />
+      <Pricing />
+      <Pricing />
+      <Pricing />
+      <Pricing />
+    </>
+  );
+
 }
 
-// export default App;
+export default App;
