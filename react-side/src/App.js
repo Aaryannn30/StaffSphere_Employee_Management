@@ -4,6 +4,9 @@ import './App.css';
 import Pricing from './components/Pricing';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Cards from './components/Cards';
+import MainBanner from './components/MainBanner';
+import LoginForm from './components/LoginForm';
 
 const App = () => {
   // const [details, setDetails] = useState([]);
@@ -44,8 +47,10 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <MainBanner/>
+      <Cards/>
       <Pricing />
-      <Pricing />
+      <LoginForm/>
       <Footer/>
     </>
   );
