@@ -24,6 +24,9 @@ const MainBanner = () => {
             initial="hidden"
             animate="visible"
         >
+            <h1>
+                Hello
+            </h1>
             <h1 className="text-5xl font-bold text-blue-800 mb-4">Manage your entire team in one App</h1>
             <p className="text-lg mb-6">Connecteam simplifies everyday work with deskless teams and keeps them connected, so you can focus on growing the business.</p>
             <div className="space-x-4">

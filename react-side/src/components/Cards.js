@@ -4,7 +4,7 @@ const Cards = () => {
     return (
         <div className="flex flex-col">
             <div className="flex flex-row h-screen w-full">
-                <div className="w-1/2 flex justify-center items-center bg-sky-50 box-border">
+                <div className="w-1/2 flex justify-center items-center bg-sky-50 box-bordert">
                     <div className="h-80 w-80 rounded-lg m-0 bg-cyan-500"></div>
                 </div>
                 <div className="w-1/2 flex justify-center items-center bg-slate-50 box-border ">
