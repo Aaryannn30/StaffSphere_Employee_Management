@@ -46,12 +46,14 @@ const App = () => {
 
   return (
     <>
+     <div >Kishan.. Testing !</div>
       <Navbar />
       <MainBanner/>
       <Cards/>
       <Pricing />
       <LoginForm/>
       <Footer/>
+
     </>
   );
 
