@@ -52,6 +52,7 @@ const App = () => {
       <Pricing />
       <LoginForm/>
       <Footer/>
+
     </>
   );
 
