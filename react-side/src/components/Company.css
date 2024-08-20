@@ -225,82 +225,80 @@ p {
 
 /* Contact us css */
 
-/* Container for the entire page */
+/* Add space at the top for the Navbar */
 .contact-us-container {
-    font-family: Arial, sans-serif;
+    margin-top: 80px; /* Adjust this value based on your Navbar height */
+    padding: 20px;
 }
 
-/* Header section styling */
-.contact-us-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/contactUs.png');
-    background-size: 100%;
-    background-position: center;
-    padding: 100px 20px;
-    text-align: center;
-    color: white;
-}
-
-.contact-us-header h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-/* Content section styling */
 .contact-us-content {
-    padding: 40px 20px;
+    font-size: 1.5rem; /* Equivalent to 24px */
+    line-height: 2rem;
+    color: #4a5568;
     text-align: center;
-    background-color: white;
-}
-
-.contact-us-content h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.contact-us-content .note {
-    font-size: 1rem;
-    color: #666;
     margin-bottom: 40px;
 }
 
-/* Help section styling */
-.help-section {
+.contact-us-content h2 {
+    font-size: 1.5rem; /* Equivalent to 24px */
+    line-height: 2rem;
+    font-weight: 700;
+    /* font-family: 'Georgia', serif; /* Classic serif font */
+    /* font-size: 2rem; */ 
+    color: #4a5568;
+}
+
+.section-contact {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
     display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: center; /* Centers the content horizontally */
 }
 
-.help-column {
-    max-width: 600px;
-    text-align: left;
+.section-form {
+    max-width: 600px; /* Adjusted to make the form wider */
+    width: 100%;
+    margin: 0 auto;
 }
 
-.help-column h3 {
-    font-size: 1.5rem;
+.section-form form div {
     margin-bottom: 20px;
 }
 
-.help-column ul {
-    list-style: none;
-    padding: 0;
+.section-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-family: 'Georgia', serif;
+    color: #555;
 }
 
-.help-column ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.help-column ul p {
+.section-form input,
+.section-form textarea {
+    width: 100%; /* Full width of the form container */
+    padding: 12px; /* Increased padding for more emphasis */
+    border: 1px solid #ddd;
+    border-radius: 5px;
     font-size: 1rem;
-    color: #333;
-    margin: 5px 0 20px 0;
+    font-family: 'Arial', sans-serif;
 }
 
-.help-column ul a {
-    color: #0066cc;
-    text-decoration: none;
+.section-form input:focus,
+.section-form textarea:focus {
+    border-color: #007BFF; /* Classic blue focus color */
+    outline: none;
 }
 
-.help-column ul a:hover {
-    text-decoration: underline;
+.section-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.section-form button:hover {
+    background-color: #0056b3;
 }
