@@ -1,27 +1,55 @@
 import React from 'react';
+import { useState } from "react";
 import './Company.css';
 
 const ContactUs = () => {
+
+    const [contactUs, setContactUs] = useState({
+        username: "",
+        email: "",
+        message: "",
+    });
+
+    const handleInput = (event) => {
+        const name = event.target.name;
+        const value = event.target.value
+
+        setContactUs({...contactUs, [name]: value});
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Send contactUs data to server here
+        console.log(contactUs);
+        // setContactUs({username: "", email: "", message: ""});
+    }
+
     return (
         <div className="contact-us-container">
-            <header className="contact-us-header">
-                <h1>Contact Us</h1>
-            </header>
-            
             <section className="contact-us-content">
                 <h2>Let's Start a Conversation</h2>
-                <p className="note">Please note: all fields are required.</p>
-                
-                <div className="help-section">
-                    <div className="help-column">
-                        <h3>Ask how we can help you:</h3>
-                        <ul>
-                            <li><strong>See our platform in action</strong></li>
-                            <p>Request a personalized demo of TUNE’s partner marketing platform.</p>
-                            <li><strong>Master performance marketing</strong></li>
-                            <p>From <a href="#">TUNE Academy courses</a> to industry <a href="#">research</a> and <a href="#">insights</a>, learn how to grow your business through performance-based partnerships.</p>
-                        </ul>
-                    </div>
+            </section>
+            <section className="section-contact">
+                <div className="container grid grid-two-cols">
+                    <section className="section-form">
+                        <form onSubmit={handleSubmit}>
+                            <div>
+                                <label htmlFor="username">username</label>
+                                <input type="text" name="username" id="username" autoComplete="off" value={contactUs.username} onChange={handleInput}  required />
+                            </div>
+                            <div>
+                                <label htmlFor="email">email</label>
+                                <input type="email" name="email" id="email" autoComplete="off" value={contactUs.email} onChange={handleInput} required />
+                            </div>
+
+                            <div>
+                                <label htmlFor="message">message</label>
+                                <textarea name="message" id="message" cols="30" rows="5" autoComplete="off" value={contactUs.message} onChange={handleInput} required></textarea>
+                            </div>
+
+                            <button type="submit">submit</button>
+                        </form>
+                    </section>
                 </div>
             </section>
         </div>
