@@ -13,7 +13,7 @@ const Sidebar = () => {
             {/* Sidebar */}
             <div
                 className={`fixed top-0 left-0 h-full bg-gray-900 text-white shadow-lg transform ${isOpen ? 'translate-x-0' : '-translate-x-full'
-                    } transition-transform duration-300 ease-in-out w-52 mt-16`}
+                    } transition-transform duration-300 ease-in-out w-[200px] mt-16`}
             >
                 {/* Toggle Button at the Top */}
                 <div className="flex items-center justify-between h-16 px-4 bg-gray-800 border-b border-gray-700">
@@ -98,7 +98,7 @@ const Sidebar = () => {
             )}
 
             {/* Main Content */}
-            <div className={`${!isOpen ? '' : 'ml-60'} 'flex-1 p-6 mt-16 transition-transform duration-300 ease-in-out' `}>
+            <div className={`${!isOpen ? 'ml-[20ox]' : 'ml-[210px]'} 'flex-1 mt-4 transition-transform duration-300 ease-in-out' `}>
                 <h2 className="text-2xl font-bold">Main Content</h2>
                 <p className="mt-4 text-gray-600">
                     This is the main content area. When the sidebar is toggled, this area will remain visible and
