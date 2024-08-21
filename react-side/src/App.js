@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Cards from './components/Cards';
 import MainBanner from './components/MainBanner';
 import LoginForm from './components/LoginForm';
+import Dashboard from './components/Dasbboard'
 
 const App = () => {
   // const [details, setDetails] = useState([]);
@@ -46,12 +47,13 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
-      <MainBanner/>
-      <Cards/>
-      <Pricing />
-      <LoginForm/>
-      <Footer/>
+      {/* <Navbar scroll='true' />
+      <MainBanner />
+      <Cards /> */}
+      <Dashboard />
+      {/* <Pricing />
+      <LoginForm />
+      <Footer /> */}
     </>
   );
 
