@@ -5,6 +5,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+// <<<<<<< Aryan
+// import Cards from './components/Cards';
+// import MainBanner from './components/MainBanner';
+// import LoginForm from './components/LoginForm';
+// import Dashboard from './components/Dasbboard'
+// =======
 import MainContent from './MainContent'; // Import the MainContent component
 
 
@@ -45,20 +51,13 @@ const App = () => {
   // );
 
   return (
-    // <>
-    //   <Navbar />
-    //   <MainBanner/>
-    //   <Cards/>
-    //   <Pricing />
-    //   <LoginForm/>
-    //   <Footer/>
-
-    // </>
+    <>
   <Router>
     <Navbar />
       <MainContent />  {/* Use the MainContent component to handle routes */}
     <Footer />
   </Router>
+    <>
   );
 
 }
