@@ -54,7 +54,8 @@
 
 /* Container */
 .about-us-section {
-    background-color: #f9f9fc; /* Very light-colored background */
+    background-color: #f9f9fc;
+    /* Very light-colored background */
     padding: 60px 20px;
     text-align: center;
 }
@@ -91,7 +92,8 @@
 
 .icon {
     font-size: 2rem;
-    color: #6c63ff; /* Icon color */
+    color: #6c63ff;
+    /* Icon color */
     margin-bottom: 15px;
 }
 
@@ -176,63 +178,65 @@ p {
 }
 
 .contact-us-button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  border-radius: 50px;
-  background: #87cefa;
-  width: 45px;
-  height: 45px;
-  transition: all 0.3s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #87cefa;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
 }
 
 .contact-us-button span {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #234567;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
 }
 
 .contact-us-button svg {
-  position: relative;
-  top: 8px;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: #234567;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.3s ease;
+    position: relative;
+    top: 8px;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
 }
 
 .contact-us-button:hover:before {
-  width: 100%;
-  background: #87cefa;
+    width: 100%;
+    background: #87cefa;
 }
 
 .contact-us-button:hover svg {
-  transform: translateX(0);
+    transform: translateX(0);
 }
 
 .contact-us-button:active {
-  transform: scale(0.95);
+    transform: scale(0.95);
 }
 
 /* Contact us css */
 
 /* Add space at the top for the Navbar */
 .contact-us-container {
-    margin-top: 80px; /* Adjust this value based on your Navbar height */
+    margin-top: 80px;
+    /* Adjust this value based on your Navbar height */
     padding: 20px;
 }
 
 .contact-us-content {
-    font-size: 1.5rem; /* Equivalent to 24px */
+    font-size: 1.5rem;
+    /* Equivalent to 24px */
     line-height: 2rem;
     color: #4a5568;
     text-align: center;
@@ -240,11 +244,12 @@ p {
 }
 
 .contact-us-content h2 {
-    font-size: 1.5rem; /* Equivalent to 24px */
+    font-size: 1.5rem;
+    /* Equivalent to 24px */
     line-height: 2rem;
     font-weight: 700;
     /* font-family: 'Georgia', serif; /* Classic serif font */
-    /* font-size: 2rem; */ 
+    /* font-size: 2rem; */
     color: #4a5568;
 }
 
@@ -252,11 +257,13 @@ p {
     background-color: #f8f8f8;
     padding: 40px 20px;
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
+    justify-content: center;
+    /* Centers the content horizontally */
 }
 
 .section-form {
-    max-width: 600px; /* Adjusted to make the form wider */
+    max-width: 600px;
+    /* Adjusted to make the form wider */
     width: 100%;
     margin: 0 auto;
 }
@@ -275,8 +282,10 @@ p {
 
 .section-form input,
 .section-form textarea {
-    width: 100%; /* Full width of the form container */
-    padding: 12px; /* Increased padding for more emphasis */
+    width: 100%;
+    /* Full width of the form container */
+    padding: 12px;
+    /* Increased padding for more emphasis */
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
@@ -285,7 +294,8 @@ p {
 
 .section-form input:focus,
 .section-form textarea:focus {
-    border-color: #007BFF; /* Classic blue focus color */
+    border-color: #007BFF;
+    /* Classic blue focus color */
     outline: none;
 }
 

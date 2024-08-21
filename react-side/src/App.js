@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 // import Dashboard from './components/Dasbboard'
 // =======
 import MainContent from './MainContent'; // Import the MainContent component
+import Dasbboard from './components/Dasbboard';
 
 
 const App = () => {
@@ -52,12 +53,13 @@ const App = () => {
 
   return (
     <>
-  <Router>
-    <Navbar />
-      <MainContent />  {/* Use the MainContent component to handle routes */}
-    <Footer />
-  </Router>
-    <>
+      {/* <Router>
+        <Navbar scroll='true'/>
+        <MainContent />  {/* Use the MainContent component to handle routes */}
+        {/* <Footer />
+      </Router> */} 
+      <Dasbboard/>
+    </>
   );
 
 }
