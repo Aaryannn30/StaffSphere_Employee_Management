@@ -6,7 +6,9 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import MainContent from './MainContent'; // Import the MainContent component
-
+import Dashboard from './components/Dashboard';
+import DashboardSidebar from './components/Dashboard_Sidebar'
+import { useState } from 'react';
 
 const App = () => {
   // const [details, setDetails] = useState([]);
@@ -43,7 +45,7 @@ const App = () => {
   //     ))}
   //   </div>
   // );
-
+  const [sidebarToggle,setSidebarToggle] = useState(false)
   return (
     // <>
     //   <Navbar />
@@ -58,6 +60,13 @@ const App = () => {
     <Navbar />
       <MainContent />  {/* Use the MainContent component to handle routes */}
     <Footer />
+
+    {/* for admin dashboard */}
+
+    <div className="flex">
+<Dashboard sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle}/>
+<DashboardSidebar sidebarToggle={sidebarToggle}/>
+    </div>
   </Router>
   );
 
