@@ -15,6 +15,7 @@ import Cards from './components/Cards';
 import Pricing from './components/Pricing';
 import LoginForm from './components/LoginForm';
 import FAQ from './components/FAQs';
+import Profile from './components/Dashboard/Profile'
 
 const App = () => {
   // const [details, setDetails] = useState([]);
@@ -65,6 +66,7 @@ const App = () => {
     <>
       {/* <Router>
         <Navbar scroll='true' />
+        <MainBanner/>
         <Cards />
         <Pricing />
         <LoginForm />
@@ -72,7 +74,8 @@ const App = () => {
         <Footer />
       </Router> */}
       {/* <Dashboard /> */}
-      <FAQ/>
+      {/* <FAQ/> */}
+      <Profile/>
     </>
   );
 
