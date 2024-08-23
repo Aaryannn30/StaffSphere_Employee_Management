@@ -4,8 +4,8 @@ const Cards = () => {
   return (
     <div className="flex flex-col overflow-x-hidden font-sans text-azure m-0 p-0">
       <div className="flex flex-row h-screen w-full">
-        <div className="flex justify-center items-center w-1/2 bg-[#ffffff] p-5 box-border">
-          <div className="h-[500px] w-[600px] rounded-[7%] bg-cornflowerblue m-5"></div>
+        <div className="flex justify-center items-center w-1/2">
+          <div className="h-[500px] w-[600px] rounded-[7%] bg-[#CBE2B5] m-5"></div>
         </div>
         <div className="flex justify-center items-center w-1/2 bg-[#fefeff] p-5 box-border">
           <div>
@@ -23,7 +23,7 @@ const Cards = () => {
       </div>
 
       <div className="flex flex-row h-screen w-full">
-        <div className="flex justify-center items-center w-1/2 pl-14">
+        <div className="flex justify-center items-center w-1/2 bg-[#fefeff] p-5 box-border">
           <div>
             <p className="font-semibold text-[#0D134C] text-lg uppercase tracking-widest mb-5">Scheduling and Time tracking</p>
             <h2 className="text-[#0D134C] text-4xl text-left m-0">Full control, from scheduling to payroll</h2>
@@ -36,8 +36,8 @@ const Cards = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center items-center w-1/2 bg-[#FF8A8A] p-5 box-border">
-          <div className="h-[500px] w-[600px] rounded-[7%] bg-[#FF8A8A] m-5"></div>
+        <div className="flex justify-center items-center w-1/2">
+          <div className="h-[500px] w-[600px] rounded-[7%] bg-[#CBE2B5] m-5"></div>
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const Cards = () => {
       </div>
 
       <div className="flex flex-row h-screen w-full">
-        <div className="flex justify-center items-center w-1/2 pl-14">
+        <div className="flex justify-center items-center w-1/2 bg-[#fefeff] p-5 box-border">
           <div>
             <p className="font-semibold text-[#0D134C] text-lg uppercase tracking-widest mb-5">Scheduling and Time tracking</p>
             <h2 className="text-[#0D134C] text-4xl text-left m-0">Full control, from scheduling to payroll</h2>
@@ -74,8 +74,8 @@ const Cards = () => {
             </ul>
           </div>
         </div>
-        <div className="flex justify-center items-center w-1/2 bg-[#64D2ED] p-5 box-border">
-          <div className="h-[500px] w-[600px] rounded-[7%] bg-[#64D2ED] m-5"></div>
+        <div className="flex justify-center items-center w-1/2">
+          <div className="h-[500px] w-[600px] rounded-[7%] bg-[#CBE2B5] m-5"></div>
         </div>
       </div>
     </div>
