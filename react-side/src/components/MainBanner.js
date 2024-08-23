@@ -24,6 +24,9 @@ const MainBanner = () => {
             initial="hidden"
             animate="visible"
         >
+            <div className="p-4 bg-gray-100 dark:bg-gray-700 rounded">
+                <p className="text-gray-800 dark:text-gray-200">This is a themed component.</p>
+            </div>
             <h1 className="text-5xl font-bold text-blue-800 mb-4">Manage your entire team in one App</h1>
             <p className="text-lg mb-6">Connecteam simplifies everyday work with deskless teams and keeps them connected, so you can focus on growing the business.</p>
             <div className="space-x-4">
