@@ -74,8 +74,8 @@ const App = () => {
         <Footer />
       </Router> */}
       {/* <Dashboard /> */}
-      {/* <FAQ/> */}
-      <Profile/>
+      <FAQ/>
+      {/* <Profile/> */}
     </>
   );
 

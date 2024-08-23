@@ -7,19 +7,19 @@ const ProfileCard = () => {
     return (
         <div
             className="h-screen flex justify-center items-center bg-cover"
-            style={{ backgroundImage: `url(${p1})` }}
+            style={{ backgroundImage: `url(${p2})` }}
         >
             <div className="w-[clamp(428px,990px,990px)] h-[670px] bg-[#171717] border-2 border-[#4f46e5] rounded-[40px] overflow-auto grid grid-rows-[220px_auto]">
 
                 {/* Profile Header */}
                 <div
                     className="relative bg-center bg-cover rounded-t-[30px] h-[220px]"
-                    style={{ backgroundImage: `url(${p3})` }}
+                    style={{ backgroundImage: `url(${p1})` }}
                 >
                     <div className="absolute inset-[calc(100%-75px)_auto_auto_70px] flex items-center">
                         <div
                             className="w-[150px] h-[150px] bg-center bg-cover rounded-full border-[10px] border-[#171717]"
-                            style={{ backgroundImage: `url(${p1})` }}
+                            style={{ backgroundImage: `url(${p3})` }}
                         ></div>
                         <div className="flex flex-col justify-center text-white bg-[#171717] px-6 py-2 rounded-br-[50px] -translate-x-2">
                             <h1 className="text-[32px]">Mohammad.S</h1>
@@ -73,8 +73,8 @@ const ProfileCard = () => {
                             className="bg-[#262626] text-[#ffffffb3] p-4 rounded-lg border border-[#ffffff4c] flex flex-col gap-[10px]"
                         >
                             <div
-                                className="relative bg-center bg-cover rounded-md h-[70%]"
-                                style={{ backgroundImage: `url(${p2})` }}
+                                className="relative bg-center bg-cover rounded-md h-[90%]"
+                                style={{ backgroundImage: `url(${p1})` }}
                             >
                                 <span className="absolute inset-3 bg-[#000000b3] text-white px-2 rounded">Last Post</span>
                             </div>
