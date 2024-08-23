@@ -2,6 +2,11 @@ import React from 'react';
 import p1 from './p1.jpg';
 import p2 from './P2.jpg';
 import p3 from './P3.jpg';
+import { RiTwitterXFill } from "react-icons/ri";
+import { BsLinkedin } from "react-icons/bs";
+import { FaInstagram } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa6';
+
 
 const ProfileCard = () => {
     return (
@@ -9,7 +14,7 @@ const ProfileCard = () => {
             className="h-screen flex justify-center items-center bg-cover"
             style={{ backgroundImage: `url(${p2})` }}
         >
-            <div className="w-[clamp(428px,990px,990px)] h-[670px] bg-[#171717] border-2 border-[#4f46e5] rounded-[40px] overflow-auto grid grid-rows-[220px_auto]">
+            <div className="w-[clamp(428px,990px,990px)] h-[670px] bg-[#171717] border-2 border-[#4f46e5] rounded-[40px] overflow-hidden grid grid-rows-[220px_auto] ">
 
                 {/* Profile Header */}
                 <div
@@ -62,11 +67,11 @@ const ProfileCard = () => {
 
                         <div className="col-span-2 bg-[#262626] text-[#ffffffb3] p-4 rounded-lg flex items-center gap-4">
                             <span>Follow me on:</span>
-                            <a href="#" className="text-[#818cf8] text-[24px]"><i className="fab fa-facebook-square"></i></a>
-                            <a href="https://twitter.com/MammadSahragard" className="text-[#818cf8] text-[24px]"><i className="fab fa-twitter-square"></i></a>
-                            <a href="https://www.linkedin.com/in/mohammadsahragard/" className="text-[#818cf8] text-[24px]"><i className="fab fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/mammad.sahragard/" className="text-[#818cf8] text-[24px]"><i className="fab fa-instagram-square"></i></a>
-                            <a href="https://github.com/MohammadSahragard" className="text-[#818cf8] text-[24px]"><i className="fab fa-github-square"></i></a>
+                            <a href="/" className="text-[#818cf8] text-[24px]"><i className="fab fa-facebook-square"></i></a>
+                            <a href="https://twitter.com/MammadSahragard" className="text-[#818cf8] text-[24px]"><RiTwitterXFill /></a>
+                            <a href="https://www.linkedin.com/in/mohammadsahragard/" className="text-[#818cf8] text-[24px]"><BsLinkedin /></a>
+                            <a href="https://www.instagram.com/mammad.sahragard/" className="text-[#818cf8] text-[24px]"><FaInstagram /></a>
+                            <a href="https://github.com/MohammadSahragard" className="text-[#818cf8] text-[24px]"><FaGithub /></a>
                         </div>
 
                         <div
@@ -78,8 +83,8 @@ const ProfileCard = () => {
                             >
                                 <span className="absolute inset-3 bg-[#000000b3] text-white px-2 rounded">Last Post</span>
                             </div>
-                            <h3 className="text-white text-[18px]">3D layer</h3>
-                            <button className="border border-[#818cf8] text-[#818cf8] rounded-md px-2 py-1 text-center">View</button>
+                                <h3 className="absolute text-white text-[18px]">3D layer</h3>
+                                <button className=" absolute border border-[#818cf8] text-[#818cf8] rounded-md px-2 py-1 text-center">View</button>
                         </div>
                     </div>
                 </div>
