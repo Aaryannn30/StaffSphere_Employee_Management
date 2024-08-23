@@ -1,22 +1,20 @@
 // import React, { useState, useEffect } from 'react';
 // import axios from 'axios';
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-// <<<<<<< Aryan
-// import Cards from './components/Cards';
-// import MainBanner from './components/MainBanner';
-// import LoginForm from './components/LoginForm';
-// import Dashboard from './components/Dasbboard'
-// =======
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import MainContent from './MainContent'; // Import the MainContent component
 import Dashboard from './components/Dashboard';
-import DashboardSidebar from './components/Dashboard_Sidebar'
+// import DashboardSidebar from './components/DSidebar'
 import { useState } from 'react';
-import Dasbboard from './components/Dasbboard';
-
+import MainBanner from './components/MainBanner';
+import Cards from './components/Cards';
+import Pricing from './components/Pricing';
+import LoginForm from './components/LoginForm';
+import FAQ from './components/FAQs';
 
 const App = () => {
   // const [details, setDetails] = useState([]);
@@ -53,9 +51,9 @@ const App = () => {
   //     ))}
   //   </div>
   // );
-  const [sidebarToggle,setSidebarToggle] = useState(false)
+
   return (
-    <>
+    //<>
     //   <Navbar />
     //   <MainBanner/>
     //   <Cards/>
@@ -64,25 +62,17 @@ const App = () => {
     //   <Footer/>
 
     // </>
-  <Router>
-    <Navbar />
-      <MainContent />  {/* Use the MainContent component to handle routes */}
-    <Footer />
-
-    {/* for admin dashboard */}
-
-    <div className="flex">
-      <Dashboard sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle}/>
-      <DashboardSidebar sidebarToggle={sidebarToggle}/>
-    </div>
-  </Router>
     <>
       {/* <Router>
-        <Navbar scroll='true'/>
-        <MainContent />  {/* Use the MainContent component to handle routes */}
-        {/* <Footer />
-      </Router> */} 
-      <Dasbboard/>
+        <Navbar scroll='true' />
+        <Cards />
+        <Pricing />
+        <LoginForm />
+        <MainContent />
+        <Footer />
+      </Router> */}
+      {/* <Dashboard /> */}
+      <FAQ/>
     </>
   );
 

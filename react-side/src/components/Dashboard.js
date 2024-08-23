@@ -1,12 +1,20 @@
 import React from 'react'
-import Navbar from './Dashboard_Nav'
+import Sidebar from './Sidebar'
+import Dnav from './DNav'
+import DView from './Dashboard/DView'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-const Dashboard = ({sidebarToggle,setSidebarToggle}) => {
-  return (
-    <div className={`${sidebarToggle ? "" : " ml-64 "} w-full`}>
-        <Navbar sidebarToggle={sidebarToggle} setSidebarToggle={setSidebarToggle}/>
-    </div>
-  )
+const Dasbboard = () => {
+
+    return (
+        <>
+            <div className="">
+                <Router>
+                    <Sidebar />                
+                </Router>
+            </div>
+        </>
+    )
 }
 
-export default Dashboard
+export default Dasbboard;
