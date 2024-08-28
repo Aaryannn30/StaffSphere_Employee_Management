@@ -4,12 +4,12 @@ import { MdOutlineMarkUnreadChatAlt, MdDashboardCustomize } from "react-icons/md
 import { IoFileTrayFull } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa6";
 import { LuFlower } from "react-icons/lu";
-import SearchBar from './SearchBar';
-import Dropdown from './Dropdown';
+import SearchBar from '../SearchBar';
+import Dropdown from '../Dropdown';
 import { Link, useLocation } from 'react-router-dom';
-import DView from './Dashboard/DView';
+import DView from './DView';
 
-const Sidebar = () => {
+const DSidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
 
@@ -34,17 +34,17 @@ const Sidebar = () => {
 
                     {/* Notification Icon */}
                     <div className="relative">
-                        <FaBell className="w-3 h-3 text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer" />
+                        <FaBell className="w-4 h-4 text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer " />
                     </div>
 
                     {/* Update Feed Icon */}
                     <div className="relative">
-                        <FaNewspaper className="w-3 h-3 text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer" />
+                        <FaNewspaper className="w-4 h-4 text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer" />
                     </div>
 
                     {/* Invite Members Icon */}
                     <div className="relative">
-                        <FaUserPlus className="w-3 h-3 text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer" />
+                        <FaUserPlus className="w-4 h-4 text-white hover:text-gray-300 transition-colors duration-300 cursor-pointer" />
                     </div>
 
                     {/* User Profile Icon with Dropdown */}
@@ -164,4 +164,4 @@ const Sidebar = () => {
     );
 };
 
-export default Sidebar;
+export default DSidebar;

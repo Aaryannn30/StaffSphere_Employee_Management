@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import MainContent from './MainContent'; // Import the MainContent component
-import Dashboard from './components/Dashboard';
+import Dashboard from './components/Dashboard/Dashboard';
 // import DashboardSidebar from './components/DSidebar'
 import { useState } from 'react';
 import MainBanner from './components/MainBanner';

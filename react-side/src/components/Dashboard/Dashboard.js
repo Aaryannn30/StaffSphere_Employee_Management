@@ -1,7 +1,5 @@
 import React from 'react'
-import Sidebar from './Sidebar'
-import Dnav from './DNav'   
-import DView from './Dashboard/DView'
+import DSidebar from './DSidebar'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 const Dasbboard = () => {
@@ -10,7 +8,7 @@ const Dasbboard = () => {
         <>
             <div className="">
                 <Router>
-                    <Sidebar />                
+                    <DSidebar />                
                 </Router>
             </div>
         </>
