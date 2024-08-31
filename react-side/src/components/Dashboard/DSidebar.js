@@ -122,32 +122,32 @@ const DSidebar = () => {
                                 <FaBars className="w-4 h-4" />
                             </button>
                             <Link to='/dashboard'
-                                className="flex items-center px-3 py-2 text-gray-200 bg-gray-800 rounded-lg hover:bg-gray-700 hover:text-white transition"
+                                className={`flex items-center px-3 py-2 ${isActive('/dashboard') ? 'bg-gray-700 text-white' : 'text-gray-400 hover:bg-gray-700 hover:text-white'} rounded-lg transition`}
                             >
                                 <FaTachometerAlt className="w-4 h-4" />
                             </Link>
-                            <Link to='/workspace'
-                                className="flex items-center px-3 py-2 text-gray-400 hover:bg-gray-700 hover:text-white rounded-lg transition"
+                            <Link to='/workspace'                            
+                                className={`flex items-center px-3 py-2 ${isActive('/workspace') ? 'bg-gray-700 text-white' : 'text-gray-400 hover:bg-gray-700 hover:text-white'} rounded-lg transition`}
                             >
                                 <MdDashboardCustomize className="w-4 h-4" />
                             </Link>
                             <Link to='/users'
-                                className="flex items-center px-3 py-2 text-gray-400 hover:bg-gray-700 hover:text-white rounded-lg transition"
+                                className={`flex items-center px-3 py-2 ${isActive('/users') ? 'bg-gray-700 text-white' : 'text-gray-400 hover:bg-gray-700 hover:text-white'} rounded-lg transition`}
                             >
                                 <FaUsers className="w-4 h-4" />
                             </Link>
                             <Link to='chat'
-                                className="flex items-center px-3 py-2 text-gray-400 hover:bg-gray-700 hover:text-white rounded-lg transition"
+                                className={`flex items-center px-3 py-2 ${isActive('/chat') ? 'bg-gray-700 text-white' : 'text-gray-400 hover:bg-gray-700 hover:text-white'} rounded-lg transition`}
                             >
                                 <MdOutlineMarkUnreadChatAlt className="w-4 h-4" />
                             </Link>
                             <Link to='update_feed'
-                                className="flex items-center px-3 py-2 text-gray-400 hover:bg-gray-700 hover:text-white rounded-lg transition"
+                                className={`flex items-center px-3 py-2 ${isActive('/update_feed') ? 'bg-gray-700 text-white' : 'text-gray-400 hover:bg-gray-700 hover:text-white'} rounded-lg transition`}
                             >
                                 <IoFileTrayFull className="w-4 h-4" />
                             </Link>
                             <Link to='analysis'
-                                className="flex items-center px-3 py-2 text-gray-400 hover:bg-gray-700 hover:text-white rounded-lg transition"
+                                className={`flex items-center px-3 py-2 ${isActive('/analysis') ? 'bg-gray-700 text-white' : 'text-gray-400 hover:bg-gray-700 hover:text-white'} rounded-lg transition`}
                             >
                                 <FaChartPie className="w-4 h-4" />
                             </Link>
@@ -156,7 +156,7 @@ const DSidebar = () => {
                 )}
 
                 {/* Main Content */}
-                <div className={`transform ${!isOpen ? 'ml-[48px]' : 'ml-[200px]'} 'flex-1 p-10 transition-transform duration-700 ease-out'  `}>
+                <div className={`transform ${!isOpen ? 'ml-[48px]' : 'ml-[200px]'} flex-1 transition-transform duration-700 ease-out overflow-y-auto`}>
                     <DView />
                 </div>
             </div>
