@@ -60,26 +60,23 @@ const Dropdown = () => {
                         </div>
                     </div>
                     <nav className="py-2">
-                        <a href="/" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
+                        <a href="/personal-info" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
                             <FaUserCog className="w-6 h-6" />
                             <span className="ml-3">Account Settings</span>
                         </a>
-                        <a href="/" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
+                        <a href="/notifications" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
                             <MdSearch className="w-6 h-6" />
-                            <span className="ml-3">Integrations</span>
+                            <span className="ml-3">Notification</span>
                         </a>
-                        <a href="/" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
+                        <a href="/password" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
                             <FaCogs className="w-6 h-6" />
-                            <span className="ml-3">Settings</span>
+                            <span className="ml-3">Password</span>
                         </a>
-                        <a href="/" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
+                        <a href="/working-status" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
                             <FiFileText className="w-6 h-6" />
-                            <span className="ml-3">Guide</span>
+                            <span className="ml-3">Working Status</span>
                         </a>
-                        <a href="/" className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100">
-                            <FaLifeRing className="w-6 h-6" />
-                            <span className="ml-3">Helper Center</span>
-                        </a>
+                        
                     </nav>
                     <div className="px-4 py-4 border-t border-gray-200">
                         <div className="flex items-center justify-between">

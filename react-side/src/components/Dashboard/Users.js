@@ -370,13 +370,13 @@ const Users = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
   return (
-    <div>
-      <header className="border-b border-gray-200 bg-gray-50">
+    <div className='h-screen'>
+      <header className="border-b border-gray-200 bg-[#769FCD] dark:bg-[#070F2B]">
         <div className="max-w-screen-xl px-2 py-2 sm:px-4 sm:py-4 lg:px-6">
           <div className="flex flex-col items-start gap-2 md:flex-row md:items-center md:justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-gray-600 sm:text-3xl">Users</h1>
-            </div>
+              <h1 className="text-2xl font-bold text-gray-600  dark:text-gray-200 sm:text-3xl">Users</h1>
+            </div> 
 
             <div className="flex items-center gap-2">
               <button
@@ -399,7 +399,7 @@ const Users = () => {
         </div>
       </header>
 
-      <div className="mx-auto my-0.5 p-6 bg-white shadow-lg">
+      <div className="mx-auto my-0.5 p-6 bg-[#769FCD] dark:bg-[#070F2B] shadow-lg">
         <div className="flex justify-between items-center mb-6 pt-6">
           <div className="flex items-center w-full space-x-4">
             <div className="relative w-1/2">
@@ -487,12 +487,12 @@ const Users = () => {
                 alt={person.name}
               />
               <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-gray-900">{person.name}</p>
-                <p className="text-sm text-gray-500">{person.email}</p>
+                <p className="text-sm font-medium dark:text-sky-300 text-gray-800">{person.name}</p>
+                <p className="text-sm text-[#0F4C75]">{person.email}</p>
               </div>
               <div className="flex-shrink-0 text-right">
-                <p className="text-sm text-gray-500">{person.role}</p>
-                <p className={`text-sm ${person.online ? 'text-green-500' : 'text-gray-400'}`}>
+                <p className="text-sm text-[#0F4C75] dark:text-gray-400">{person.role}</p>
+                <p className={`text-sm ${person.online ? 'dark:text-green-500 text-green-200' : 'dark:text-gray-400 text-gray-200'}`}>
                     {person.online ? 'Online' : person.lastSeen || 'Offline'}
                 </p>
               </div>

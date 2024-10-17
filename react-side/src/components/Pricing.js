@@ -4,12 +4,6 @@ import { FiCalendar } from "react-icons/fi";
 import { TbCalendarMonth } from "react-icons/tb";
 
 const Pricing = () => {
-
-    // Scroll to top when component mounts
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     const [isMonthly, setIsMonthly] = useState(true);
 
     const pricingData = [
@@ -34,9 +28,9 @@ const Pricing = () => {
     ];
 
     return (
-        <div className="font-sans bg-gray-100 min-h-screen">
-            <header className="flex flex-col items-center justify-center pt-20">
-                <h1 className="text-2xl font-bold text-gray-700">Our Pricing</h1>
+        <div className="font-sans bg-[#BBE1FA] dark:bg-[#070f2b] h-full pb-5">
+            <header className="flex flex-col items-center justify-center">
+                <h1 className="text-2xl font-bold text-gray-700 dark:text-[#BBE1FA]">Our Pricing</h1>
                 <SliderToggle isMonthly={isMonthly} setIsMonthly={setIsMonthly} />
             </header>
             <main className="flex justify-center my-10">
@@ -57,7 +51,7 @@ const SliderToggle = ({ isMonthly, setIsMonthly }) => {
     return (
         <div className="relative flex w-fit items-center rounded-full mt-4">
             <button
-                className={`${TOGGLE_CLASSES} ${isMonthly ? "text-white" : "text-slate-800"
+                className={`${TOGGLE_CLASSES} ${isMonthly ? "text-white" : "text-slate-800 dark:text-white"
                     }`}
                 onClick={() => {
                     setIsMonthly(true);
@@ -67,7 +61,7 @@ const SliderToggle = ({ isMonthly, setIsMonthly }) => {
                 <span className="relative z-10">Monthly</span>
             </button>
             <button
-                className={`${TOGGLE_CLASSES} ${!isMonthly ? "text-white" : "text-slate-800"
+                className={`${TOGGLE_CLASSES} ${!isMonthly ? "text-white" : "text-slate-800 dark:text-white"
                     }`}
                 onClick={() => {
                     setIsMonthly(false);
@@ -96,33 +90,37 @@ const PricingCard = ({ plan, isMonthly }) => {
 
     return (
         <article
-            className={`flex flex-col items-center bg-white p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 ${title === "Professional"
-                    ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
-                    : title === "Master"
-                    ? "bg-gradient-to-r from-purple-600 to-purple-900 text-white" : "bg-gradient-to-r from-blue-200 to-blue-500 text-white"
-                }`}
+            className={`flex flex-col items-center p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 
+            ${title === "Professional" 
+                ? "bg-gradient-to-r from-[#BBE1FA] to-[#3282B8] text-white"
+                : title === "Master" 
+                ? "bg-gradient-to-r from-[#3282B8] to-[#535C91] text-white" 
+                : "bg-gradient-to-r from-[#BBE1FA] to-[#D2DAFF] text-white"} 
+            dark:bg-gradient-to-r dark:from-[#1B262C] dark:to-[#070F2B]`}
         >
-            <h2 className="text-xl font-bold mb-4">{title}</h2>
-            <p className="text-4xl font-bold mb-6">
-                <span className="text-2xl">$</span>
+            <h2 className="text-xl font-bold mb-4 dark:text-[#BBE1FA]">{title}</h2>
+            <p className="text-4xl font-bold mb-6 dark:text-[#BBE1FA]">
+                <span className="text-2xl">₹</span>
                 {price}
             </p>
             <ul className="w-full mb-6">
                 {features.map((feature, index) => (
                     <li
                         key={index}
-                        className="py-2 border-t border-b border-gray-200 text-gray-700"
+                        className="py-2 border-t border-b border-gray-200 text-gray-700 dark:border-[#BBE1FA] dark:text-[#BBE1FA]"
                     >
                         {feature}
                     </li>
                 ))}
             </ul>
             <button
-                className={`py-2 px-4 rounded font-bold uppercase transition ${title === "Professional"
-                        ? "bg-white text-blue-600 hover:bg-transparent hover:text-white border border-white"
-                        : title === "Master" ?"bg-white text-purple-600 hover:bg-transparent hover:text-white border border-white": 
-                        "bg-white text-blue-400 hover:bg-transparent hover:text-white border border-white" 
-                    }`}
+                className={`py-2 px-4 rounded font-bold uppercase transition 
+                ${title === "Professional" 
+                    ? "bg-white text-[#0F4C75] hover:bg-transparent hover:text-white border border-white" 
+                    : title === "Master" 
+                    ? "bg-white text-[#3282B8] hover:bg-transparent hover:text-white border border-white" 
+                    : "bg-white text-[#BBE1FA] hover:bg-transparent hover:text-white border border-white"} 
+                dark:bg-[#0F4C75] dark:text-white dark:hover:bg-[#BBE1FA] dark:hover:text-[#1B262C]`}
             >
                 Learn More
             </button>
