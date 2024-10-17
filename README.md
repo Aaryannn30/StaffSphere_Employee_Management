@@ -88,24 +88,24 @@ npm install
 npm start
 ```
 
-###📚 Documentation
+### 📚 Documentation
 
 Django Documentation
 React Documentation
 
-###💡 Future Enhancements
+### 💡 Future Enhancements
 
 Implement chat functionality for internal team communication 💬.
 Add performance analytics for better HR decision-making 📊.
 Enhance security features 🔐.
 
-###🤝 Contributing
+### 🤝 Contributing
 We welcome contributions! Please follow the guidelines in CONTRIBUTING.md to submit your pull requests. Feel free to raise issues or request new features.
 
-##🏅 License
+## 🏅 License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-###📧 Contact
+### 📧 Contact
 For any inquiries or suggestions, feel free to reach out:
 
 Email: aryanmaru1230@gmail.com
