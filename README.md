@@ -110,6 +110,3 @@ Enhance security features 🔐.
 
 - Email: aryanmaru1230@gmail.com
 - LinkedIn: [Aryan Maru](https://www.linkedin.com/in/aryan-maru-59372424a/)
-
-
-Make sure to replace the placeholders like `link-to-screenshot.png`, `link-to-gif.gif`, and `yourusername` with actual links and information. This README provides a structured and visually engaging introduction to your **StaffSphere** project!
